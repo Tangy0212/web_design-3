@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduce Major</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="overflow-x: hidden">
+<!--粘性导航栏-->
+<div class="header">
+	<nav id="navbar">
+		<a href="https://icec.nefu.edu.cn/" target="_blank"><img src="../image/学院logo.png" alt="学院logo" class="logo"></a>
+		<ul id="menu">
+			<a href="../index.html"><li>首页</li></a>
+			<li>专业介绍</li>
+			<a href="../lab/lab.html"><li>实验室</li></a>
+			<li>教师队伍</li>
+			<a href="../news/index_video.html"><li>新闻公告</li></a>
+			<a href="../loginin/signup.html" target="_blank"><button id="btn" type="button">登录 &DoubleRightArrow;</button></li></a>
+		</ul>
+	</nav>
+</div>
+<!--粘性导航栏-->
+<script>
+	var navbar = document.getElementById("navbar");
+	var menu = document.getElementById("menu");
+
+	window.onscroll = function () {
+		if (window.pageYOffset >= menu.offsetTop)
+			navbar.classList.add("sticky");
+		else{
+			navbar.classList.remove("sticky");
+		}
+	}
+</script>
+<h1>专业方向介绍</h1>
+<br> 
+<div class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner">软件开发技术</div></li>
+		<li class="step step02"><div class="step-inner">移动互联网技术</div></li>
+		<li class="step step03"><div class="step-inner">嵌入式软件系统方向</div></li>
+		<li class="step step04"><div class="step-inner">电子商务方向</div></li>
+		<li class="step step05"><div class="step-inner">Web开发</div></li>
+	</ul>
+	
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h2>软件开发技术方向</h2>
+		<p>本方向以培养学生良好的软件分析、设计、开发、维护、测试等研发能力为目标，通过模块化的学习，
+			使其具备扎实的技术基础、良好的技术素质和优秀的技术应用能力。
+			本专业要求能够应用先进的软件设计方法、开发方法和工程管理方法，进行软件设计与编程、项目的规范管理和
+			项目的交流与组织协调，同时具备团队协作精神、技术创新、项目管理和市场开拓能力，能够胜任大中型软件开发
+			和管理的工程型软件开发工作。
+		</p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h2>移动互联网技术方向</h2>
+		<p>
+			本方向向培养德智体全面发展，具有良好的软件开发以及移动互联行业职业道德和综合素质，具有扎实软件基础理论、
+			软件工程开发和较强工程实践能力的实用型软件工程技术与管理人才。本专业要求能够运用先进的软甲工程方法、技术及工具，
+			从事软件分析、设计、开发和维护等方面的工作，同时具备团队协作能力、技术创新、项目管理和市场开拓能力，
+			能够在企事业单位胜任研发、软件项目管理和系统服务等工作。
+		</p>
+	</div>
+	
+	<div class="section-content creative">
+		<h2>嵌入式软件系统方向</h2>
+		<p>
+			本方向以培养学生能够独立进行嵌入式软件设计开发能力为目标，通过模块化的学习，使其具备扎实的技术基础、良好的技术素质
+			和优秀的技术应用能力。本专业要求能够掌握嵌入式体系结构、汇编指令集、开发环境及嵌入式操作系统，对嵌入式的技术体系有
+			深入的理解和掌握，并具有较强的项目开发、技术创新、项目管理能力以及团队协作精神，能够独立胜任嵌入式软件设计与开发工作。
+		</p>
+	</div>
+	
+	<div class="section-content production">
+		<h2>电子商务方向</h2>
+		<p>
+			本方向培养德智体美全面发展，具有良好的软件开发以及电子商务行业职业道德和综合素质，具有扎实软件基础理论、软件工程开发和较强的工程实践能力
+			的实用型软件工程技术与管理人才。本专业要求能够运用先进的软甲工程方法、技术及工具，
+			从事软件分析、设计、开发和维护等方面的工作，同时具备团队协作能力、技术创新、项目管理和市场开拓能力，
+			能够在企事业单位胜任研发、软件项目管理和系统服务等工作。
+		</p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h2>Web开发方向</h2>
+		<p>
+			Web开发包括前端开发和后端开发两个大的岗位划分，前端开发主要以应用Html、CSS和JavaScript为主，
+			而后端开发则可以使用Java、Python、PHP、C#等语言。早期大部分毕业生会选择以后端开发为主。
+		</p>
+	</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ 	<script>
+    
+    $(".step").click( function() {
+		$(this).addClass("active").prevAll().addClass("active");
+		$(this).nextAll().removeClass("active");
+	});
+
+	$(".step01").click( function() {
+		$("#line-progress").css("width", "3%");
+		$(".discovery").addClass("active").siblings().removeClass("active");
+	});
+
+	$(".step02").click( function() {
+		$("#line-progress").css("width", "25%");
+		$(".strategy").addClass("active").siblings().removeClass("active");
+	});
+
+	$(".step03").click( function() {
+		$("#line-progress").css("width", "50%");
+		$(".creative").addClass("active").siblings().removeClass("active");
+	});
+
+	$(".step04").click( function() {
+		$("#line-progress").css("width", "75%");
+		$(".production").addClass("active").siblings().removeClass("active");
+	});
+
+	$(".step05").click( function() {
+		$("#line-progress").css("width", "100%");
+		$(".analysis").addClass("active").siblings().removeClass("active");
+	});
+    </script>
+</body>
+</html>
