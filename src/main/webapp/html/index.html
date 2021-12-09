@@ -11,58 +11,58 @@
 </head>
 <body style="overflow-x: hidden" >
 
-    <!--粘性导航栏-->
-    <div class="header">
-        <nav id="navbar">
-            <a href="https://icec.nefu.edu.cn/" target="_blank"><img src="image/logo.png" alt="学院logo" class="logo"></a>
-            <ul id="menu">
-                <li>首页</li>
-                <li>专业介绍</li>
-                <li>实验室</li>
-                <li>教师队伍</li>
-                <li>新闻公告</li>
-                <a href="./loginin/signup.html" target="_blank"><button id="btn" type="button">登录 &DoubleRightArrow;</button></li></a>
-            </ul>
-        </nav>
-    </div>
-    <!--粘性导航栏-->
-    <script>
-        var navbar = document.getElementById("navbar");
-        var menu = document.getElementById("menu");
-
-        window.onscroll = function () {
-            if (window.pageYOffset >= menu.offsetTop)
-                navbar.classList.add("sticky");
-            else{
-                navbar.classList.remove("sticky");
-            }
-        }
-    </script>
-<!--首页内容展示-->
-    <div class="context" style="position: absolute">
-        <br>
-        <br>
-        <br>
-       <larger>东北林业大学信息与计算机工程学院</larger>
-        <br>
-        <br>
-        <br>
-        <b><h1>软 件 工 程</h1></b>
-
-    </div>
-    <!--轮播图-->
-    <div class="container"style="position: absolute">
-        <ul>
-            <li><img src="./image/NEFU1.jpeg" alt=""></li>
-            <li><img src="./image/NEFU2.jpg" alt=""></li>
-            <li><img src="./image/NEFU3.jpeg" alt=""></li>
+<!--粘性导航栏-->
+<div class="header">
+    <nav id="navbar">
+        <a href="https://icec.nefu.edu.cn/" target="_blank"><img src="image/logo.png" alt="学院logo" class="logo"></a>
+        <ul id="menu">
+            <li>首页</li>
+            <li>专业介绍</li>
+            <a href="./lab/lab.html"><li>实验室</li></a>
+            <li>教师队伍</li>
+            <a href="./news/index_video.html"><li>新闻公告</li></a>
+            <a href="./loginin/signup.html" target="_blank"><button id="btn" type="button">登录 &DoubleRightArrow;</button></li></a>
         </ul>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-    </div>
+    </nav>
+</div>
+<!--粘性导航栏-->
+<script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+    window.onscroll = function () {
+        if (window.pageYOffset >= menu.offsetTop)
+            navbar.classList.add("sticky");
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+<!--首页内容展示-->
+<div class="context" style="position: absolute">
+    <br>
+    <br>
+    <br>
+    <larger>东北林业大学信息与计算机工程学院</larger>
+    <br>
+    <br>
+    <br>
+    <b><h1>软 件 工 程</h1></b>
+
+</div>
+<!--轮播图-->
+<div class="picture-container"style="position: absolute">
+    <ul>
+        <li><img src="./image/NEFU1.jpeg" alt=""></li>
+        <li><img src="./image/NEFU2.jpg" alt=""></li>
+        <li><img src="./image/NEFU3.jpeg" alt=""></li>
+    </ul>
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+</div>
 
 <!--     首页专业概况介绍 卡片弹出-->
 <div class="card">
@@ -108,204 +108,84 @@
 </div>
 
 <!--    优秀成果展示-->
+<!--    优秀成果展示-->
+<div class="show-case">
 
-<!--    featured-->
-    <p class="text">
-        项目要求
-        基于HTML/CSS/JS/Servlet/JDBC等技术完成以下设计内容
-        允许并鼓励使用Bootstrap/easy-ui/flat-ui等UI框架，及轮播/动画/图表/全屏滚动等等插件
-        允许使用vue/react/springboot等技术，但需部署在学生个人服务器，提供访问网址
-        本设计占总成绩40%，按功能完成设计状况评分
-        分组：每人1组，独立完成
-        截至时间：15周(具体日期待定)
-        提交/部署方式：以war包上传到指定系统，项目统一部署在华为云服务器
-        部署环境：Docker Tomcat9+MySQL8容器
-        项目展示：所有学生项目在公网公开展示
-        <br>
+    <div class="container">
+        <h1 class="excellent">科研项目</h1>
+        <div class="box">
+            <h2>01</h2>
+            <h3>Project One</h3>
+            <p>近年来，学院承担国家、省部级等各类科研任务170多项，经费4000余万元，取得诸多的研究成果。在国内外重要学术刊物和国际学术会议上发表学术论文1500余篇，其中600余篇被SCI/EI收录；出版专著、教材近百部；获省部级以上成果奖励40余项，获得知识产权300余件；参加国内外学术会议和学术交流100余人次。
+            </p>
+        </div>
+        <div class="box">
+            <h2>02</h2>
+            <h3>Project Two</h3>
+            <p>学院多年来一直将服务地方经济与社会发展为己任，在技术推广和成果转化方面为我国林业经济发展做出重要贡献，一些阶段性研究成果已经大范围推广应用，其中林间智能装备、木材加工敏捷生产、木材产销存数字林业技术成果的推广应用得到了行业的广泛认可和好评。
+            </p>
+        </div>
+        <div class="box">
+            <h2>03</h2>
+            <h3>Project Three</h3>
+            <p>学院设有国家级重点学科“林业工程”下的“林业信息工程”方向1个，计算机科学与技术、软件工程、信息与通信工程一级硕士点学科3个，电子信息类（包含计算机技术、软件工程、新一代电子信息技术（含量子技术等）、农业工程与信息技术专业学位点2个。
+            </p>
+        </div>
+    </div>
 
-        设计内容
-        软件工程专业网站
-        主要考核内容：网站整体设计，用户互交体验
-        包括：HTML布局，HTML标签的使用，应用CSS样式增强网站显示效果，使用JS动态改变页面，Servlet对数据的处理，JDBC数据库访问等
-        <br>
-        主要功能
-        前台网站
-        主要板块内容：专业介绍，实验室，教师队伍，就业指南，新闻，公告等。
-        要求至少包含导航。
-        要求板块必须包含2级内容。例如，专业介绍：专业简介，方向简介等；实验室：923创新实验室，925移动开发实验室，923实验室等；并能跳转至2级详细内容。
+</div>
+<!--    底部版权标识栏-->
+<div class="copyright">
+    <div class="copyright_content">
+        <ul>
+            <li><a href="#">关于</a>
+                <ul>
+                    <li><a href="https://icec.nefu.edu.cn/index.htm" target="_blank">学院官网</a></li>
+                    <li><a href="https://zhaosheng.nefu.edu.cn/" target="_blank">本科生招生信息</a></li>
+                    <li><a href="https://yz.nefu.edu.cn/" target="_blank">研究生照生信息</a></li>
+                </ul>
+            </li>
+            <li><a href="#">精品课程</a>
+                <ul>
+                    <li><a href="https://mooc1-1.chaoxing.com/course/91374545.html" target="_blank">WEB开发技术</a></li>
+                    <li><a href="https://mooc2-ans.chaoxing.com/mycourse/stu?courseid=208182893&clazzid=44056543&cpi=101332643&enc=8ee7f288e5a30b26c9d48c431661bd43&t=1638954640798&pageHeader=0" target="_blank">计算机网络</a></li>
+                    <li><a href="https://mooc2-ans.chaoxing.com/mycourse/stu?courseid=214297651&clazzid=45447332&cpi=101332643&enc=b93831d91902eb51bb2a4c50e412f0c1&t=1638954675504&pageHeader=0" target="_blank">算法设计</a></li>
+                </ul>
+            </li>
+            <li><a href="#">社交媒体</a>
+                <ul>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                    <li><a href="#">企业微信</a></li>
+                </ul>
+            </li>
+            <li><a href="#">关注</a>
+                <ul>
+                    <li><a href="#">新浪微博账号</a></li>
+                    <li><a href="#">东林团委公众号</a></li>
+                    <li><a href="#">抖音账号</a></li>
+                    <li><a href="#">校园办公室</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul><a href="https://www.nefu.edu.cn/"><img src="./image/学校logo.png" width="200px"></a> </ul>
+                <br>
+                <ul><a href="https://icec.nefu.edu.cn/"><img src="./image/学院logo.png" width="200px"></a> </ul>
+            </li>
+        </ul>
 
-        教师队伍：教授，副教授，讲师等
-        例如，当点击副教授时，跳转至副教授列表，再次点击某教师时，跳转至教师详细介绍，内容应尽可能包含文字/图片多媒体等信息
+    </div>
 
-        新闻公告：主页列出最近5个新闻与公告，显示标题时间等，要求从数据库中获取，点击标题跳转至信息的详细描述。
-        <br>
-        后台系统
-        需在前台网站显示提供后台关系系统入口链接，后台统一管理员登录用户名/密码admin
-        管理员登录后，可在后台对新闻公告信息进行增加，增删改查全部完成有加分
-        过滤器，未登录状态无法访问进入后台管理系统
-        仅需实现发布基本文本信息，无需包含图片等附件，实现富文本提交有加分
+</div>
+<div class="div_foot">
+    &copy;2021  All Right Reserved.TANGY版权所有
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>>
 
-        信息无需分页
-        除新闻公告外，教师实验室介绍等可使用静态数据
-        所有介绍类内容应尽可能包含文字与图片
-        所有文字/图片不必使用真实信息
-
-        项目要求
-        基于HTML/CSS/JS/Servlet/JDBC等技术完成以下设计内容
-        允许并鼓励使用Bootstrap/easy-ui/flat-ui等UI框架，及轮播/动画/图表/全屏滚动等等插件
-        允许使用vue/react/springboot等技术，但需部署在学生个人服务器，提供访问网址
-        本设计占总成绩40%，按功能完成设计状况评分
-        分组：每人1组，独立完成
-        截至时间：15周(具体日期待定)
-        提交/部署方式：以war包上传到指定系统，项目统一部署在华为云服务器
-        部署环境：Docker Tomcat9+MySQL8容器
-        项目展示：所有学生项目在公网公开展示
-        <br>
-
-        设计内容
-        软件工程专业网站
-        主要考核内容：网站整体设计，用户互交体验
-        包括：HTML布局，HTML标签的使用，应用CSS样式增强网站显示效果，使用JS动态改变页面，Servlet对数据的处理，JDBC数据库访问等
-        <br>
-        主要功能
-        前台网站
-        主要板块内容：专业介绍，实验室，教师队伍，就业指南，新闻，公告等。
-        要求至少包含导航。
-        要求板块必须包含2级内容。例如，专业介绍：专业简介，方向简介等；实验室：923创新实验室，925移动开发实验室，923实验室等；并能跳转至2级详细内容。
-
-        教师队伍：教授，副教授，讲师等
-        例如，当点击副教授时，跳转至副教授列表，再次点击某教师时，跳转至教师详细介绍，内容应尽可能包含文字/图片多媒体等信息
-
-        新闻公告：主页列出最近5个新闻与公告，显示标题时间等，要求从数据库中获取，点击标题跳转至信息的详细描述。
-        <br>
-        后台系统
-        需在前台网站显示提供后台关系系统入口链接，后台统一管理员登录用户名/密码admin
-        管理员登录后，可在后台对新闻公告信息进行增加，增删改查全部完成有加分
-        过滤器，未登录状态无法访问进入后台管理系统
-        仅需实现发布基本文本信息，无需包含图片等附件，实现富文本提交有加分
-
-        信息无需分页
-        除新闻公告外，教师实验室介绍等可使用静态数据
-        所有介绍类内容应尽可能包含文字与图片
-        所有文字/图片不必使用真实信息
-
-        项目要求
-        基于HTML/CSS/JS/Servlet/JDBC等技术完成以下设计内容
-        允许并鼓励使用Bootstrap/easy-ui/flat-ui等UI框架，及轮播/动画/图表/全屏滚动等等插件
-        允许使用vue/react/springboot等技术，但需部署在学生个人服务器，提供访问网址
-        本设计占总成绩40%，按功能完成设计状况评分
-        分组：每人1组，独立完成
-        截至时间：15周(具体日期待定)
-        提交/部署方式：以war包上传到指定系统，项目统一部署在华为云服务器
-        部署环境：Docker Tomcat9+MySQL8容器
-        项目展示：所有学生项目在公网公开展示
-        <br>
-
-        设计内容
-        软件工程专业网站
-        主要考核内容：网站整体设计，用户互交体验
-        包括：HTML布局，HTML标签的使用，应用CSS样式增强网站显示效果，使用JS动态改变页面，Servlet对数据的处理，JDBC数据库访问等
-        <br>
-        主要功能
-        前台网站
-        主要板块内容：专业介绍，实验室，教师队伍，就业指南，新闻，公告等。
-        要求至少包含导航。
-        要求板块必须包含2级内容。例如，专业介绍：专业简介，方向简介等；实验室：923创新实验室，925移动开发实验室，923实验室等；并能跳转至2级详细内容。
-
-        教师队伍：教授，副教授，讲师等
-        例如，当点击副教授时，跳转至副教授列表，再次点击某教师时，跳转至教师详细介绍，内容应尽可能包含文字/图片多媒体等信息
-
-        新闻公告：主页列出最近5个新闻与公告，显示标题时间等，要求从数据库中获取，点击标题跳转至信息的详细描述。
-        <br>
-        后台系统
-        需在前台网站显示提供后台关系系统入口链接，后台统一管理员登录用户名/密码admin
-        管理员登录后，可在后台对新闻公告信息进行增加，增删改查全部完成有加分
-        过滤器，未登录状态无法访问进入后台管理系统
-        仅需实现发布基本文本信息，无需包含图片等附件，实现富文本提交有加分
-
-        信息无需分页
-        除新闻公告外，教师实验室介绍等可使用静态数据
-        所有介绍类内容应尽可能包含文字与图片
-        所有文字/图片不必使用真实信息
-
-        项目要求
-        基于HTML/CSS/JS/Servlet/JDBC等技术完成以下设计内容
-        允许并鼓励使用Bootstrap/easy-ui/flat-ui等UI框架，及轮播/动画/图表/全屏滚动等等插件
-        允许使用vue/react/springboot等技术，但需部署在学生个人服务器，提供访问网址
-        本设计占总成绩40%，按功能完成设计状况评分
-        分组：每人1组，独立完成
-        截至时间：15周(具体日期待定)
-        提交/部署方式：以war包上传到指定系统，项目统一部署在华为云服务器
-        部署环境：Docker Tomcat9+MySQL8容器
-        项目展示：所有学生项目在公网公开展示
-        <br>
-
-        设计内容
-        软件工程专业网站
-        主要考核内容：网站整体设计，用户互交体验
-        包括：HTML布局，HTML标签的使用，应用CSS样式增强网站显示效果，使用JS动态改变页面，Servlet对数据的处理，JDBC数据库访问等
-        <br>
-        主要功能
-        前台网站
-        主要板块内容：专业介绍，实验室，教师队伍，就业指南，新闻，公告等。
-        要求至少包含导航。
-        要求板块必须包含2级内容。例如，专业介绍：专业简介，方向简介等；实验室：923创新实验室，925移动开发实验室，923实验室等；并能跳转至2级详细内容。
-
-        教师队伍：教授，副教授，讲师等
-        例如，当点击副教授时，跳转至副教授列表，再次点击某教师时，跳转至教师详细介绍，内容应尽可能包含文字/图片多媒体等信息
-
-        新闻公告：主页列出最近5个新闻与公告，显示标题时间等，要求从数据库中获取，点击标题跳转至信息的详细描述。
-        <br>
-        后台系统
-        需在前台网站显示提供后台关系系统入口链接，后台统一管理员登录用户名/密码admin
-        管理员登录后，可在后台对新闻公告信息进行增加，增删改查全部完成有加分
-        过滤器，未登录状态无法访问进入后台管理系统
-        仅需实现发布基本文本信息，无需包含图片等附件，实现富文本提交有加分
-
-        信息无需分页
-        除新闻公告外，教师实验室介绍等可使用静态数据
-        所有介绍类内容应尽可能包含文字与图片
-        所有文字/图片不必使用真实信息
-
-        项目要求
-        基于HTML/CSS/JS/Servlet/JDBC等技术完成以下设计内容
-        允许并鼓励使用Bootstrap/easy-ui/flat-ui等UI框架，及轮播/动画/图表/全屏滚动等等插件
-        允许使用vue/react/springboot等技术，但需部署在学生个人服务器，提供访问网址
-        本设计占总成绩40%，按功能完成设计状况评分
-        分组：每人1组，独立完成
-        截至时间：15周(具体日期待定)
-        提交/部署方式：以war包上传到指定系统，项目统一部署在华为云服务器
-        部署环境：Docker Tomcat9+MySQL8容器
-        项目展示：所有学生项目在公网公开展示
-        <br>
-
-        设计内容
-        软件工程专业网站
-        主要考核内容：网站整体设计，用户互交体验
-        包括：HTML布局，HTML标签的使用，应用CSS样式增强网站显示效果，使用JS动态改变页面，Servlet对数据的处理，JDBC数据库访问等
-        <br>
-        主要功能
-        前台网站
-        主要板块内容：专业介绍，实验室，教师队伍，就业指南，新闻，公告等。
-        要求至少包含导航。
-        要求板块必须包含2级内容。例如，专业介绍：专业简介，方向简介等；实验室：923创新实验室，925移动开发实验室，923实验室等；并能跳转至2级详细内容。
-
-        教师队伍：教授，副教授，讲师等
-        例如，当点击副教授时，跳转至副教授列表，再次点击某教师时，跳转至教师详细介绍，内容应尽可能包含文字/图片多媒体等信息
-
-        新闻公告：主页列出最近5个新闻与公告，显示标题时间等，要求从数据库中获取，点击标题跳转至信息的详细描述。
-        <br>
-        后台系统
-        需在前台网站显示提供后台关系系统入口链接，后台统一管理员登录用户名/密码admin
-        管理员登录后，可在后台对新闻公告信息进行增加，增删改查全部完成有加分
-        过滤器，未登录状态无法访问进入后台管理系统
-        仅需实现发布基本文本信息，无需包含图片等附件，实现富文本提交有加分
-
-        信息无需分页
-        除新闻公告外，教师实验室介绍等可使用静态数据
-        所有介绍类内容应尽可能包含文字与图片
-        所有文字/图片不必使用真实信息
-    </p>
 
 
 </body>

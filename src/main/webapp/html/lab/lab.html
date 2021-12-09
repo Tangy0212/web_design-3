@@ -2,34 +2,62 @@
 <html lang="Zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>33-CardEffect</title>
+  <title>Science Laboratory</title>
   <!-- Link CSS -->
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body >
+
+<!--粘性导航栏-->
+<div class="header">
+	<nav id="navbar">
+		<a href="https://icec.nefu.edu.cn/" target="_blank"><img src="img/学院logo.png" alt="学院logo" class="logo"></a>
+		<ul id="menu">
+			<a href="../index.html"><li>首页</li></a>
+			<li>专业介绍</li>
+			<a href="./lab.html"><li>实验室</li></a>
+			<li>教师队伍</li>
+			<a href="../news/index_video.html"><li>新闻公告</li></a>
+			<a href="../loginin/signup.html" target="_blank"><button id="btn" type="button">登录 &DoubleRightArrow;</button></li></a>
+		</ul>
+	</nav>
+</div>
+<!--粘性导航栏-->
+<script>
+	var navbar = document.getElementById("navbar");
+	var menu = document.getElementById("menu");
+
+	window.onscroll = function () {
+		if (window.pageYOffset >= menu.offsetTop)
+			navbar.classList.add("sticky");
+		else{
+			navbar.classList.remove("sticky");
+		}
+	}
+</script>
 	<section class="team" data-background="img/01.jpg">
 		<div class="container">
 			<div class="row">
 				<br><br><br>
 				<div class="section-head text-center col-sm-12">
-					<h4>WEB DESIGN</h4>
-					<h2>OUR <span class="pink">TALENTED</span> TEAM</h2>
+					<h4>Science Laboratory</h4>
+					<h2>重点 <span class="pink">实验室</span> 建设</h2>
 					<br><br>
 				</div>
 				<div class="item col-md-4">
 					<div class="hover3d">
 						<div class="hover3d-child">
 							<div class="team-img">
-								<img src="img/01.jpg" class="img-responsive" alt="">
+								<img src="img/923创新实验室.png" class="img-responsive" alt="">
 							</div>
 							<div class="info">
 								<div>
-									<h5>Alex Smith</h5>
-									<span>Project Manager</span>
+									<h5>923创新实验室</h5>
+									<span>位于成栋楼923室</span>
 									<p>
-										人难免天生有自怜情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。
+										创新教育实验室专注于为学生实施创新教育，发展核心素养提供一站式解决方案，通过项目制课题形式带动中学生参与创新实践与科学探究，帮助学生建立有利于创新人才培养的创新教育体系、创新教学方式，让学生实现“人人有课题，个个会创新”。
 									</p>
 									<div class="social">
 										<a href="https://www.bilibili.com/video/av68148870" class="icon">
@@ -51,14 +79,14 @@
 					<div class="hover3d">
 						<div class="hover3d-child">
 							<div class="team-img">
-								<img src="img/01.jpg" class="img-responsive" alt="">
+								<img src="img/925移动开发实验室.png" class="img-responsive" alt="">
 							</div>
 							<div class="info">
 								<div>
-									<h5>Alex Smith</h5>
-									<span>Project Manager</span>
+									<h5>925移动开发实验室</h5>
+									<span>位于成栋楼925室</span>
 									<p>
-										人难免天生有自怜情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。
+										该实验室2014年7月建成,面积共计112m2现有HP计算机49台、交互式投影一套,多媒体教学系统一套。。主要承担《JAVA程序开发》课程、《Android手机程序开发》及软件工程方向“3+1”实训
 									</p>
 									<div class="social">
 										<a href="https://www.bilibili.com/video/av68148870" class="icon">
@@ -80,26 +108,15 @@
 					<div class="hover3d">
 						<div class="hover3d-child">
 							<div class="team-img">
-								<img src="img/01.jpg" class="img-responsive" alt="">
+								<img src="img/924实验室.png" class="img-responsive" alt="">
 							</div>
 							<div class="info">
 								<div>
-									<h5>Alex Smith</h5>
-									<span>Project Manager</span>
+									<h5>924大数据实验室</h5>
+									<span>位于成栋楼924室</span>
 									<p>
-										人难免天生有自怜情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。
+										2014年8月18日，联合国与百度宣布启动战略合作，共建大数据联合实验室。据悉，联合国开发计划署与百度大数据联合实验室的目标是探索利用大数据解决全球性问题的创新模式。 现实验室研究方向为大规模联邦深度学习、自动化深度学习、大数据科学理论等。
 									</p>
-									<div class="social">
-										<a href="https://www.bilibili.com/video/av68148870" class="icon">
-											<i class="fa fa-facebook"></i>
-										</a>
-										<a href="https://www.bilibili.com/video/av68148870" class="icon">
-											<i class="fa fa-twitter"></i>
-										</a>
-										<a href="https://www.bilibili.com/video/av68148870" class="icon">
-											<i class="fa fa-behance"></i>
-										</a>
-									</div>
 								</div>
 							</div>
 						</div>
