@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="Zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>News & Announcement</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--粘性导航栏-->
+<div class="header">
+    <nav id="navbar">
+        <a href="https://icec.nefu.edu.cn/" target="_blank"><img src="Example/logo.png" alt="学院logo" class="logo"></a>
+        <ul id="menu">
+            <a href="../index.html"><li>首页</li></a>
+            <a href="../Introduce%20major/major.html"><li>专业介绍</li></a>
+            <a href="../lab/lab.html"><li>实验室</li></a>
+            <a href="../teachers-team/teachers-team.html"><li>教师队伍</li></a>
+            <a href="../workchance/workchance.html"><li>就业指南</li></a>
+            <a href="../news/news.html"><li>新闻公告</li></a>
+            <a href="../login/login.html" target="_blank"><button id="btn" type="button">登录 &DoubleRightArrow;</button></li></a>
+        </ul>
+    </nav>
+</div>
+<!--&lt;!&ndash;粘性导航栏&ndash;&gt;-->
+<!--<script>-->
+<!--    var navbar = document.getElementById("navbar");-->
+<!--    var menu = document.getElementById("menu");-->
+
+<!--    window.onscroll = function () {-->
+<!--        if (window.pageYOffset >= menu.offsetTop)-->
+<!--            navbar.classList.add("sticky");-->
+<!--        else{-->
+<!--            navbar.classList.remove("sticky");-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<div class="container marketing">
+    <div class="selected-item">
+        <p style="color: #ffffff">教师职称选择 : <span>选择</span></p>
+    </div>
+
+    <select name="" id="cusSelectbox" style="size: A4" >
+        <option value="../teachers-team/professor.html">教授</option>
+        <option value="../teachers-team/adjunct-professor.html">副教授</option>
+        <option value="../teachers-team/lecturer.html">讲师</option>
+    </select>
+    <script >
+        var select = document.querySelector('select');
+        select.onchange = function(){
+            window.location=this.value;
+        }
+    </script>
+</div>
+    <section id="blog-landing">
+
+        <article class="white-panel">
+            <img src="https://icec.nefu.edu.cn/__local/0/13/A7/E674AC69D2A77D3F4AAE70A54B5_3E40B0CF_8C3E.jpg?e=.jpg">
+            <h1>
+                <a href="">王 波</a>
+            </h1>
+            <p>王波，讲师，硕士。主要研究方向：计算数学，软件开发。发表学术论文3篇。</p>
+        </article>
+
+        <article class="white-panel">
+            <img src="https://icec.nefu.edu.cn/__local/C/83/1B/A933C13BDF700DD82E5144B0092_A1692092_9FC7.jpg?e=.jpg">
+            <h1>
+                <a href="https://icec.nefu.edu.cn/info/1040/1763.htm">李 琰</a>
+            </h1>
+            <p>李琰，讲师，主要研究方向：软件工程，遥感和林业信息。参与科研项目多项，参编教材1部，并发表部分相关论文。</p>
+        </article>
+        <article class="white-panel">
+            <img src="https://icec.nefu.edu.cn/__local/2/72/75/4FF54112BBA54D0EC59102287EA_EDC248AD_1D34C.png">
+            <h1>
+                <a href="https://icec.nefu.edu.cn/info/1040/1765.htm">单 颖</a>
+            </h1>
+            <p>单颖，博士，讲师，主要研究方向：软件工程，林业信息。参与科研项目多项，并发表相关论文。</p>
+        </article>
+
+    </section>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="js/pinterest_grid.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#blog-landing").pinterest_grid({
+            no_columns: 4,
+            padding_x: 10,
+            padding_y: 10,
+            margin_bottom: 50,
+            single_column_breakpoint: 700
+        });
+    });
+</script>
+</body>
+</html>

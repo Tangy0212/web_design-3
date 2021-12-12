@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="Zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>News & Announcement</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--粘性导航栏-->
+<div class="header">
+    <nav id="navbar">
+        <a href="https://icec.nefu.edu.cn/" target="_blank"><img src="Example/logo.png" alt="学院logo" class="logo"></a>
+        <ul id="menu">
+            <a href="../index.html"><li>首页</li></a>
+            <a href="../Introduce%20major/major.html"><li>专业介绍</li></a>
+            <a href="../lab/lab.html"><li>实验室</li></a>
+            <a href="../teachers-team/teachers-team.html"><li>教师队伍</li></a>
+            <a href="../workchance/workchance.html"><li>就业指南</li></a>
+            <a href="../news/news.html"><li>新闻公告</li></a>
+            <a href="../login/login.html" target="_blank"><button id="btn" type="button">登录 &DoubleRightArrow;</button></li></a>
+        </ul>
+    </nav>
+</div>
+<!--&lt;!&ndash;粘性导航栏&ndash;&gt;-->
+<!--<script>-->
+<!--    var navbar = document.getElementById("navbar");-->
+<!--    var menu = document.getElementById("menu");-->
+
+<!--    window.onscroll = function () {-->
+<!--        if (window.pageYOffset >= menu.offsetTop)-->
+<!--            navbar.classList.add("sticky");-->
+<!--        else{-->
+<!--            navbar.classList.remove("sticky");-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<div class="container marketing">
+    <div class="selected-item">
+        <p style="color: #ffffff">教师职称选择 : <span>选择</span></p>
+    </div>
+
+    <select name="" id="cusSelectbox" style="size: A4" >
+        <option value="../teachers-team/professor.html">教授</option>
+        <option value="../teachers-team/adjunct-professor.html">副教授</option>
+        <option value="../teachers-team/lecturer.html">讲师</option>
+    </select>
+    <script >
+        var select = document.querySelector('select');
+        select.onchange = function(){
+            window.location=this.value;
+        }
+    </script>
+</div>
+    <section id="blog-landing">
+        <article class="white-panel">
+            <img src="https://icec.nefu.edu.cn/__local/D/CC/CD/111CCD3716FBCD4A97948BBE090_4DC1EC65_CA0E3.png">
+            <h1>
+                <a href="https://icec.nefu.edu.cn/info/1040/1757.htm" target="_blank">李 莉</a>
+            </h1>
+            <p>李莉，博士，副教授，硕士生导师，东北林业大学青年成栋名师、软件工程专业主任、专业党支部书记。</p>
+        </article>
+        <article class="white-panel">
+            <img src="https://icec.nefu.edu.cn/__local/4/9A/93/2DC4E922D52C923A80EEFB592A0_D959E15A_11121.png?e=.png">
+            <h1>
+                <a href="https://icec.nefu.edu.cn/info/1040/1756.htm" target="_blank">罗嗣卿</a>
+            </h1>
+            <p>罗嗣卿，硕士，副教授，硕士生导师。主要研究方向：信息系统析与设计、图像处理、软件服务与应用。</p>
+        </article>
+
+        <article class="white-panel">
+            <img src="https://icec.nefu.edu.cn/__local/A/76/3A/42104ECFDBC4520F0C84D30A83B_258709F7_C507.jpg?e=.jpg">
+            <h1>
+                <a href="https://icec.nefu.edu.cn/info/1040/1760.htm">张锡英</a>
+            </h1>
+            <p>张锡英， 副教授，硕士，硕士生导师。主要研究方向：现代信息技术及网络应用，数据库技术、图像检索。</p>
+        </article>
+
+        <article class="white-panel">
+            <img src="https://icec.nefu.edu.cn/__local/2/29/74/E5BD3056B6320EE8AA2C2D8DAC0_A4B029DB_C3CE.jpg">
+            <h1>
+                <a href="https://icec.nefu.edu.cn/info/1043/1843.htm">王 健</a>
+            </h1>
+            <p>王健，副教授，工学博士，农业工程与信息技术（农业信息化方向）负责人，硕士生导师，通信工程专业主任。</p>
+        </article>
+    </section>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="js/pinterest_grid.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#blog-landing").pinterest_grid({
+            no_columns: 4,
+            padding_x: 10,
+            padding_y: 10,
+            margin_bottom: 50,
+            single_column_breakpoint: 700
+        });
+    });
+</script>
+</body>
+</html>

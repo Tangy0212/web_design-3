@@ -10,30 +10,31 @@
 <!--粘性导航栏-->
 <div class="header">
 	<nav id="navbar">
-		<a href="https://icec.nefu.edu.cn/" target="_blank"><img src="Example/logo.png" alt="学院logo" class="logo"></a>
+		<a href="https://icec.nefu.edu.cn/" target="_blank"><img src="../image/学院logo.png" alt="学院logo" class="logo"></a>
 		<ul id="menu">
 			<a href="../index.html"><li>首页</li></a>
-			<li>专业介绍</li>
+			<a href="../Introduce%20major/major.html"><li>专业介绍</li></a>
 			<a href="../lab/lab.html"><li>实验室</li></a>
-			<li>教师队伍</li>
-			<a href="index_video.html"><li>新闻公告</li></a>
-			<a href="../loginin/signup.html" target="_blank"><button id="btn" type="button">登录 &DoubleRightArrow;</button></li></a>
+			<a href="../teachers-team/teachers-team.html"><li>教师队伍</li></a>
+			<a href="../workchance/workchance.html"><li>就业指南</li></a>
+			<a href="news.html"><li>新闻公告</li></a>
+			<a href="../login/login.html" target="_blank"><button id="btn" type="button">登录 &DoubleRightArrow;</button></li></a>
 		</ul>
 	</nav>
 </div>
-<!--粘性导航栏-->
-<script>
-	var navbar = document.getElementById("navbar");
-	var menu = document.getElementById("menu");
+<!--&lt;!&ndash;粘性导航栏&ndash;&gt;-->
+<!--<script>-->
+<!--	var navbar = document.getElementById("navbar");-->
+<!--	var menu = document.getElementById("menu");-->
 
-	window.onscroll = function () {
-		if (window.pageYOffset >= menu.offsetTop)
-			navbar.classList.add("sticky");
-		else{
-			navbar.classList.remove("sticky");
-		}
-	}
-</script>
+<!--	window.onscroll = function () {-->
+<!--		if (window.pageYOffset >= menu.offsetTop)-->
+<!--			navbar.classList.add("sticky");-->
+<!--		else{-->
+<!--			navbar.classList.remove("sticky");-->
+<!--		}-->
+<!--	}-->
+<!--</script>-->
 	<div class="container marketing">
 		<section id="blog-landing">
 			<article class="white-panel">
